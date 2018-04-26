@@ -2,7 +2,8 @@
 Helps the user keep track of any food, and that food's expiration dates, in their pantry.
 
 ## example code
-	'''java
+This section of code checks all the food in your inventory to make sure it is not expiring within the next week.
+
 	//check for upcoming exp dates
 	public String[] checkExpDates(String[] stuff) {
 	  String[] dates = new String[stuff.length];
@@ -32,28 +33,65 @@ Helps the user keep track of any food, and that food's expiration dates, in thei
 		
 		String[] expSoonArray = expSoon.toArray(new String[expSoon.size()]);
 		return expSoonArray;
-	}'''
-This portion of the code searches for spaces in the morse code, marking individual letters, and converts them into germanic letters. I had a hard time working this portion out but I think it turned out nicely.
+	}
+	
+This portion of code takes what ingredients a user as imputed searches the web for recipes including those ingredients. The user can also include ingredients they want to exclude.
+
+		//search button
+		HBox btnPane = new HBox(10);
+		btnPane.setAlignment(Pos.CENTER_RIGHT);
+		Button searchBtn = new Button("Search");
+		searchBtn.setOnAction(e -> {
+			String includeText = includeTF.getText().replace(", ", ",");
+			includeText = includeText.replace(" ", "%20");
+			String excludeText = excludeTf.getText().replace(", ", ",");
+			excludeText = excludeText.replace(" ", "%20");
+			String searchStr = "http://www.allrecipes.com/search/results/?ingIncl=" + includeText + "&ingExcl=" + excludeText + "&sort=re";
+			getHostServices().showDocument(searchStr);
+		});
+		
+		Button clearButton = new Button("Clear");
+		clearButton.setOnAction(e -> {
+			includeTF.setText("");
+			excludeTf.setText("");
+		});
+		btnPane.getChildren().addAll(clearButton, searchBtn);
+		
+		//data for list view
+		String[] foodNames = new String[foodList.length];
+		for(int i = 0; i < foodList.length; i++){
+			String[] pantryItem = getPantryItem(foodList[i]);
+			foodNames[i] = pantryItem[1];
+			foodNames[i] += " (Expires: ";
+			foodNames[i] += pantryItem[2];
+			foodNames[i] += ")";
+		}
+		
+		//list view
+		ListView<String> foodListView = new ListView<String>();
+		ObservableList<String> items = FXCollections.observableArrayList(foodNames);
+		foodListView.setItems(items);
+		foodListView.setOnMouseClicked(e -> {
+			int add = foodListView.getFocusModel().getFocusedIndex();
+			String tempText = includeTF.getText();
+			tempText = tempText.trim();
+			if (tempText.length() > 0)
+				if (tempText.charAt(tempText.length()-1) != ',')
+					tempText += ", ";
+			tempText += getPantryItem(foodList[add])[1];
+			includeTF.setText(tempText);
+		});
 
 ## Motivation
-I created this project primarily for a school project. I chose to create a Morse code decoder because I knew it would be a challenge for me and would help me expand my knowledge with strings, arrays, and sequential text files.
+I created this project for my final project at school. I was inspired however, by my brother-in-law. It was his idea, I'm just helping make it a reality.
 
 # Installation
-Download project with the link 'C++ final project.cpp', all additional files are created in the script.
+For instalation, download the .zip file. All the files you need are in the src folder. Once you have opened the src folder open the "PantryPrequel.java" file. This is the file you will need to run any tests.
 
-# Tests
-		cout << endl;
-		cout << "1  English to Morse code" << endl;
-		cout << "2  Morse code to English" << endl;
-		cout << "3  Conversation mode" << endl;
-		cout << "4  Recently encoded words" << endl;
-		cout << "5  Recently decoded words" << endl;
-		cout << "6  Clear memory" << endl;
-		cout << "7  Exit program" << endl;
-		cout << "Enter menu option: ";
-		cin >> menuOption;
-		cout << endl;
-		
+# Tests	
+
+
+
 This is the first thing you will see as you run the program. Using the first option, "English to Morse code", will allow you to convert words and phrases using the germanic alphabet into the morse code alphabet. Here the user will first type a word or phrase in english and the program will convert it to morse code, displaying the newly encoded word below preceded by a "-->".
 
 		1  English to Morse code
