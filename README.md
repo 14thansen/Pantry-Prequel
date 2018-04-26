@@ -92,6 +92,8 @@ For instalation, download the .zip file. All the files you need are in the src f
 
 ![alt text](https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.29.40%20AM.png "Pantry Prequel Image")
 
+<img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.29.40%20AM.png"/>
+
 This is the first thing you will see as you run the program. Using the first option, "English to Morse code", will allow you to convert words and phrases using the germanic alphabet into the morse code alphabet. Here the user will first type a word or phrase in english and the program will convert it to morse code, displaying the newly encoded word below preceded by a "-->".
 
 		1  English to Morse code
