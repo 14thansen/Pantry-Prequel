@@ -1,7 +1,7 @@
 # Pantry Prequel
 Helps the user keep track of any food, and that food's expiration dates, in their pantry.
 
-## example code
+## Example Code
 This section of code checks all the food in your inventory to make sure it is not expiring within the next week.
 
 	//check for upcoming exp dates
@@ -82,10 +82,10 @@ This portion of code takes what ingredients a user as imputed searches the web f
 			includeTF.setText(tempText);
 		});
 
-# Installation
+## Installation
 For instalation, download the .zip file. All the files you need are in the src folder. Once you have opened the src folder open the "PantryPrequel.java" file. This is the file you will need to run any tests.
 
-# Tests	
+## Tests	
 <img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.29.40%20AM.png"/>
 
 This is the first thing you will see as you run the program. If you click the about button a window will appear that will give you some basic information app using the app.
