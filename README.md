@@ -1,5 +1,8 @@
 # Pantry Prequel
-Helps the user keep track of any food, and that food's expiration dates, in their pantry.
+## Helps the user keep track of any food, and that food's expiration dates, in their pantry.
+
+## Introduction
+As a poor college student, trying to eat healthily, I’ve wasted a lot of food by letting it get old. Whether my bread gets moldy or my milk goes sour I can never seem to finish the things I buy before they go bad; this happens in part because I forget about what food I have in the cupboard and also in part because I’m just not creative enough with food to know what to make. “The Pantry Prequel” will help take care of this problem by keeping track of what food the user has and reminding you when that food will expire. It will also provide recipes with the ingredients that are going to expire soon. In the future I plan to make this program a fully functional app with a handful of other features. 
 
 ## Example Code
 This section of code checks all the food in your inventory to make sure it is not expiring within the next week.
