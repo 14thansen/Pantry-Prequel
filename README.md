@@ -89,63 +89,20 @@ I created this project for my final project at school. I was inspired however, b
 For instalation, download the .zip file. All the files you need are in the src folder. Once you have opened the src folder open the "PantryPrequel.java" file. This is the file you will need to run any tests.
 
 # Tests	
-
-![alt text](https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.29.40%20AM.png "Pantry Prequel Image")
-
 <img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.29.40%20AM.png"/>
 
-This is the first thing you will see as you run the program. Using the first option, "English to Morse code", will allow you to convert words and phrases using the germanic alphabet into the morse code alphabet. Here the user will first type a word or phrase in english and the program will convert it to morse code, displaying the newly encoded word below preceded by a "-->".
+This is the first thing you will see as you run the program. If you click the about button a window will appear that will give you some basic information app using the app.
 
-		1  English to Morse code
-		2  Morse code to English
-		3  Conversation mode
-		4  Recently encoded words
-		5  Recently decoded words
-		6  Clear memory
-		7  Exit program
-		Enter menu option: 1
+To empty the inventory just erase the "pantry.txt" file in the src folder.
 
-		Enter a word or a phrase (press [enter] to exit): Example
-		--> . -..- .- -- .--. .-.. .
+<img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.41.53%20AM.png"/>
 		
-By selecting option two you can convert words and phrases from Morse code to the germanic alphabet. Here the user will first type a word or phrase in morse code and the program will convert it back into english, displaying the newly decoded word below preceded by a "-->"
+You can access this window by clicking the add food button from the previous window. Here if you miss any imformation the program will tell you what you need to fix.
 
-		Enter a word or a phrase in morse code, seperate each word by a space,
-		a forward slash and another space ' / '. Seperate each letter by a single
-		space (press [enter] to exit): . -..- .- -- .--. .-.. .
-		--> example
+<img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.48.31%20AM.png"/>
 
-Option three allows you to have a conversation of sorts. You can convert words and phrases back and forth from english to morse code and then from morse code to english. This pattern will repeat until you prompt the program to stop. The display here will appear very simalar to options one and two but instead of returning immediatly back to the menu options you will be given the option to continue translating words, or continuing the conversation in a sense.
+This window is accessed by clicking on the search button from the first screen. By clicking on foods from the table you can add them to your "include" text box. Once you press search it will open a website in a browser window with a custom search based on the foods you put in your include and exclude text boxes.
 
-		Converstation mode allows you to encode and decode
-		sentances repeatedly, starting with encoding.
-		When prompted by "Continue..." press [enter] to continue
-		the converstation or press [space] [enter] to leave converstation mode
+<img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.51.26%20AM.png"/>
 
-		Continue...
-
-		Enter a word or a phrase (press [enter] to exit): Hello how are you
-		--> .... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..- 
-
-		Enter a word or a phrase in morse code, seperate each word by a space,
-		a forward slash and another space ' / '. Seperate each letter by a single
-		space (press [enter] to exit): --. --- --- -.. / .- -. -.. / -.-- --- ..-
-		--> good and you
-
-		Continue...
-
-The program automatically stores recently decoded and encoded words and phrases in seperate text files. Options 4 and 5 allow you to see your recent words, while option 6 clears this memory.
-		EXAMPLE --> . -..- .- -- .--. .-.. . 
-		HELLO HOW ARE YOU --> .... . .-.. .-.. --- / .... --- .-- / .- .-. . / -.-- --- ..- 
-		
-		. -..- .- -- .--. .-.. . --> example
-		--. --- --- -.. / .- -. -.. / -.-- --- ..- --> good and you
-		
-		5  Recently decoded words
-		6  Clear memory
-		7  Exit program
-		Enter menu option: 6
-
-		Memory cleared.
-		
-The final option will terminate the program.
+This window is accessed by clicking on any food. If you attempt to change the expiration date incorrectly it will automatically reset the expiration date back to what it was before.
