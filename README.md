@@ -2,7 +2,7 @@
 Helps the user keep track of any food, and that food's expiration dates, in their pantry.
 
 ## example code
-'''java
+	'''java
 	//check for upcoming exp dates
 	public String[] checkExpDates(String[] stuff) {
 	  String[] dates = new String[stuff.length];
