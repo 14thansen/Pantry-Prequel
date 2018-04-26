@@ -82,9 +82,6 @@ This portion of code takes what ingredients a user as imputed searches the web f
 			includeTF.setText(tempText);
 		});
 
-## Motivation
-I created this project for my final project at school. I was inspired however, by my brother-in-law. It was his idea, I'm just helping make it a reality.
-
 # Installation
 For instalation, download the .zip file. All the files you need are in the src folder. Once you have opened the src folder open the "PantryPrequel.java" file. This is the file you will need to run any tests.
 
@@ -106,3 +103,6 @@ This window is accessed by clicking on the search button from the first screen. 
 <img src = "https://github.com/14thansen/Pantry-Prequel/blob/master/Screen%20Shot%202018-04-26%20at%209.51.26%20AM.png"/>
 
 This window is accessed by clicking on any food. If you attempt to change the expiration date incorrectly it will automatically reset the expiration date back to what it was before.
+
+## Motivation
+I created this project for my final project at school. I was inspired however, by my brother-in-law. It was his idea, I'm just helping make it a reality.
